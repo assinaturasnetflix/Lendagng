@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Criação de Sites Profissionais</title>
+    <!-- Google Fonts (Exemplo: Montserrat e Open Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome (para ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/../src/style.css"> <!-- Ajuste o caminho se necessário -->
+    <style>
+      /* Estilo básico para garantir smooth scroll e reset mínimo */
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f4f7f6; /* Um cinza claro de fundo */
+        color: #333;
+        line-height: 1.6;
+      }
+      /* Animação de fade-in para seções (opcional) */
+      .section-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.8s forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+</head>
+<body>
+    <noscript>Você precisa habilitar o JavaScript para rodar este app.</noscript>
+    <div id="root"></div>
+    <!-- O React e ReactDOM serão injetados aqui pelo build (ou adicione os scripts manualmente se não usar CRA) -->
+</body>
+</html>
