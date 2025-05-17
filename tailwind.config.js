@@ -1,26 +1,28 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
-    "./App.js", // Adicione App.js para o Tailwind escanear classes
-    "./main.js"
+    "./src/**/*.{js,ts,jsx,tsx}", // Certifique-se que cobre seus arquivos JSX
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#08D9D6', // Um verde-azulado vibrante
-        secondary: '#252A34', // Um cinza escuro azulado
-        accent: '#FF2E63', // Um rosa/vermelho para destaque
-        background: '#0F1624', // Mais escuro que o cinza 900 padrão
-        textPrimary: '#EAEAEA',
-        textSecondary: '#A0AEC0',
+        primary: '#1E3A8A', // Um azul escuro para confiança
+        secondary: '#3B82F6', // Um azul mais vibrante para acentos
+        accent: '#F59E0B', // Um laranja/amarelo para CTAs
+        neutral: {
+          light: '#F3F4F6', // Cinza claro para fundos
+          DEFAULT: '#6B7280', // Cinza para texto
+          dark: '#1F2937', // Cinza escuro para texto/fundos
+        },
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        serif: ['Roboto Slab', 'serif'],
+        sans: ['Inter', 'sans-serif'], // Fonte moderna e limpa
+        display: ['Poppins', 'sans-serif'], // Fonte para títulos, mais "de peso"
       },
       animation: {
-        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
         'slide-in-left': 'slideInLeft 0.7s ease-out forwards',
       },
       keyframes: {
@@ -29,7 +31,7 @@ module.exports = {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+          '0%': { opacity: '0', transform: 'translateX(-50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         }
       }
