@@ -1,33 +1,31 @@
 {
-  "name": "meu-site-react-tailwind",
-  "version": "1.0.0",
-  "description": "Site profissional de serviços de criação de sites.",
-  "main": "main.js",
+  "name": "meu-site-servicos",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./input.css -o ./output.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "react",
-    "tailwind",
-    "portfolio",
-    "web development"
-  ],
-  "author": "Seu Nome Aqui <seuemail@example.com>",
-  "license": "ISC",
   "dependencies": {
-    "framer-motion": "^10.0.0",
+    "framer-motion": "^10.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.0.0"
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
-    "react-scripts": "5.0.1"
+    "vite": "^5.0.8"
   }
 }
