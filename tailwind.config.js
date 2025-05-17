@@ -3,27 +3,25 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Certifique-se que cobre seus arquivos JSX
+    "./src/**/*.{js,ts,jsx,tsx}", // Garanta que JS esteja aqui
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#1E3A8A', // Um azul escuro para confiança
-        secondary: '#3B82F6', // Um azul mais vibrante para acentos
-        accent: '#F59E0B', // Um laranja/amarelo para CTAs
-        neutral: {
-          light: '#F3F4F6', // Cinza claro para fundos
-          DEFAULT: '#6B7280', // Cinza para texto
-          dark: '#1F2937', // Cinza escuro para texto/fundos
-        },
+        'primary': '#0A192F', // Um azul escuro tecnológico
+        'secondary': '#172A45', // Um azul um pouco mais claro
+        'accent': '#64FFDA',   // Um ciano vibrante para destaque
+        'light-slate': '#CCD6F6',
+        'slate': '#8892B0',
+        'dark-slate': '#495670',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // Fonte moderna e limpa
-        display: ['Poppins', 'sans-serif'], // Fonte para títulos, mais "de peso"
+        'sans': ['Inter', 'sans-serif'], // Fonte moderna e limpa
+        'mono': ['Fira Code', 'monospace'], // Para toques "código"
       },
       animation: {
-        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
-        'slide-in-left': 'slideInLeft 0.7s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
       },
       keyframes: {
         fadeInUp: {
@@ -31,11 +29,13 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-50px)' },
+          '0%': { opacity: '0', transform: 'translateX(-30px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         }
       }
     },
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/typography'), // Descomente se instalou
+  ],
 }
