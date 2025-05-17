@@ -1,0 +1,13 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-light text-neutral-dark font-sans antialiased;
+}
+
+/* Para a rolagem suave */
+html {
+  scroll-behavior: smooth;
+}
