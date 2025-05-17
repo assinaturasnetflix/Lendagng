@@ -1,10 +1,10 @@
+// src/main.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Aplicativo from './App.js';
-import './index.css';
+import App from './App.js';
+// Importe o CSS principal que importa o Tailwind (o Vite lida com isso)
+import './input.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  React.createElement(React.StrictMode, null,
-    React.createElement(Aplicativo, null)
-  )
-);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(React.StrictMode, null, React.createElement(App)));
