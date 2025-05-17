@@ -1,13 +1,38 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Fira+Code:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-neutral-light text-neutral-dark font-sans antialiased;
+  @apply bg-primary text-light-slate font-sans antialiased;
+  scroll-behavior: smooth;
 }
 
-/* Para a rolagem suave */
-html {
-  scroll-behavior: smooth;
+/* Estilo para a barra de rolagem (opcional, mas dá um toque moderno) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A192F; /* primary */
+}
+::-webkit-scrollbar-thumb {
+  background: #495670; /* dark-slate */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64FFDA; /* accent */
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl font-bold text-accent mb-8 relative inline-block;
+}
+.section-title::after {
+  content: '';
+  @apply absolute block w-2/3 h-1 bg-accent/70 bottom-[-10px] left-1/2 transform -translate-x-1/2;
+}
+
+.card {
+  @apply bg-secondary p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300;
 }
