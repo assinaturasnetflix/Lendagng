@@ -1,0 +1,25 @@
+/* src/input.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-textDark font-sans antialiased;
+}
+
+/* Custom scrollbar (opcional, mas contribui para o visual moderno) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1E293B; /* Cor de fundo do card ou similar */
+}
+::-webkit-scrollbar-thumb {
+  background: #10B981; /* secondary */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #059669; /* secondary mais escura */
+}
