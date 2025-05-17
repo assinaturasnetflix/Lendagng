@@ -2,8 +2,8 @@
   "name": "meu-site-react-tailwind",
   "version": "1.0.0",
   "description": "Site profissional de serviços de criação de sites.",
-  "main": "main.js", // Ou index.js, dependendo da sua preferência de ponto de entrada para Node, embora neste caso o foco seja o navegador.
-  "type": "module", // Adicionado para suportar `import App from './App.js'` em main.js
+  "main": "main.js", 
+  "type": "module", 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i ./input.css -o ./output.css --watch"
@@ -14,18 +14,18 @@
     "portfolio",
     "web development"
   ],
-  "author": "Seu Nome Aqui <seuemail@example.com>", // Preencha com seus dados
-  "license": "ISC", // Ou MIT, ou a licença que preferir
+  "author": "Seu Nome Aqui <seuemail@example.com>", 
+  "license": "ISC", 
   "dependencies": {
-    "framer-motion": "^10.0.0", // Exemplo de versão, use a mais recente compatível
+    "framer-motion": "^10.0.0", 
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.0.0" // Exemplo de versão, use a mais recente compatível
-                           // Note que o uso de react-icons via CDN sem build pode ser limitado
+    "react-icons": "^4.0.0" 
+                           
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1" // Use a versão mais recente do Tailwind
+    "tailwindcss": "^3.4.1" 
   }
   }
